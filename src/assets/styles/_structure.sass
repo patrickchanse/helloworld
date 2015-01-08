@@ -1,0 +1,42 @@
+html,
+body,
+#page,
+#main
+    height: 100%   
+
+section
+    display: table
+    color: #fff
+    min-height: 100%
+    width: 100%
+    
+    transition: all 2s
+    
+    &.start
+        background-color: red
+
+    &.about
+        background-color: green
+            
+    &.contact
+        background-color: blue
+        
+    &.animate
+        background-color: black !important
+            
+.placeholder
+    display: table-cell
+    margin: 0
+    vertical-align: middle
+    padding: 0 25%
+    
+header
+    position: absolute
+    top: 0
+    
+a
+    color: #fff
+    margin-left: 2em
+    
+    &:first-child
+        margin-left: 0
