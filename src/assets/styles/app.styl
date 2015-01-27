@@ -1,22 +1,18 @@
+@import 'nib'
+
+global-reset()
+
+
 @import 'jeet'
 
-/*
-edit()
+@require "helpers/helpers.css"
 
-section
-  center(800px)
-
-  p
-    col(1/3)
-
-  h1
-    col(2/3)
-
-/* @include edit() */
-*/
-
-@require "helpers/normalize"
-@require "helpers/helpers"
-
-@require "fonts"
+@require "fonts.css"
 @require "structure"
+
+body
+    font-size: (24 / 16)em
+
+
+h1
+    font-size: 2em
