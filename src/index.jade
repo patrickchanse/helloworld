@@ -4,9 +4,11 @@ html(lang="sv")
 		meta(charset="utf-8")
 		meta(name="description", content="Lorem ipsum")
 		meta(name="viewport", content="width=device-width,initial-scale=1")
+		
 		title Hello World!
-		link(href="/assets/css/app.css", rel="stylesheet")
+		
 		link(href="http://fonts.googleapis.com/css?family=Roboto:thin,ultrabold", rel="stylesheet", type="text/css")
+		link(href="/assets/css/app.css", rel="stylesheet")
 	
 	body
 		#page
@@ -18,13 +20,13 @@ html(lang="sv")
 		
 			#main
 				section.start
-					.placeholder
+					.content
 						h1 Hej! Vi är ***,
 						p en nystartad digital produktionsbyrå.
 						p Vi hjälper reklam- och webbyråer med att översätta koncept och design till webbplatser. 
 						
 				section.about
-					.placeholder
+					.content
 						h1 Om oss
 
 						p *** grundades 2015 i Stockholm av två vänner med över 20 års sammanlagd erfarenhet av webbutveckling.
@@ -38,11 +40,11 @@ html(lang="sv")
 						p Vi arbetar med en mängd av olika ramverk för att kunna tillgodose projektens behov och använder oss av verktyg som gör våra uppdrag snabbare att utföra.
 						
 				section.contact
-					.placeholder
+					.content
 						h1 Kontakta oss
 						
 						p Behöver ni våra tjänster eller bara är nyfikna på vilka vi är?
 						
 						p: a(href="mailto:contact@webx.se") hej@webx.se
 
-		script(src="/assets/js/main.js")
+		script(src="/assets/js/app.js")

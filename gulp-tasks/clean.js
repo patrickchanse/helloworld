@@ -1,7 +1,6 @@
 // Load plugins
-var rimraf = require('gulp-rimraf');
+var del = require('del')
 
 gulp.task('clean', function() {
-	return gulp.src([path.dest], {read: false})
-	    .pipe(rimraf());
+    del([path.dest]);
 });

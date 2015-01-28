@@ -18,6 +18,6 @@ gulp.task('scripts', function() {
         .on('error', onError)
         .pipe(gulpif(isProduction, stripDebug()))
         .pipe(gulpif(isProduction, uglify()))
-        .pipe(rename('main.js'))
+        .pipe(rename('app.js'))
         .pipe(gulp.dest(path.dest + '/assets/js'));
 });
