@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Untitled Document</title>
+	<script src="http://code.jquery.com/jquery-1.11.2.js"></script>
+	<script type="text/javascript">
+		jQuery(function($) {
+		  jQuery('.popup-share').bind('click', function(e) {
+			e.preventDefault();
+			newwindow = window.open($(this).attr('href'), 'sharing', 'height=320, width=640, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no');
+			if (window.focus) {
+				newwindow.focus();
+			}
+			return false;
+		  });
+		});
+	</script>
+</head>
+<body>
+    <div class="blog-icons">
+        <ul>
+            <li class="facebook-share">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http://google.se/" target="_blank" class="popup-share">
+                    Facebook
+                </a>
+            </li>
+            <li class="twitter-share">
+                <a href="https://twitter.com/intent/tweet/?url=http://google.se/&amp;text=Google" target="_blank" class="popup-share">
+                    Twitter
+                </a>
+            </li>
+            <li class="pinterest-share">
+                <a href="http://www.pinterest.com/pin/create/button/?url=http://google.se/&amp;media=https://www.google.se/images/srpr/logo11w.png" target="_blank" class="popup-share">
+                    Pinterest
+                </a>
+            </li>
+        </ul>
+    </div>	
+</body>
+</html>
